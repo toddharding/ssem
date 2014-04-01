@@ -2,9 +2,11 @@
 
 ##Manchester Small-Scale Experimental Machine assembler
 
-###Example usage: 
+###Example usage:
+```bash
 ./SSEMbler t1.s 
 ./SSEMbler <filename>
+```
 
 On successful completion SSEMbler will have created a “binary.ssem” file copy this to the directory of the simulator and run via typing ./SSEM -f binary.ssem 
 
