@@ -1,6 +1,4 @@
-#SSEM
-
-##Manchester Small-Scale Experimental Machine emulator
+#SSEM Emulator
 
 ##Example usage:
 
@@ -19,16 +17,3 @@ During the fetch phase the CI is incremented and the PI is set to the value stor
 During the decode phase, the decoded instruction and the decoded line number are bit shifted out of the PI. 
 During the execute phase, a switch case statement is entered that contains all of the simulated instructions of the CPU, the relevant instruction is then executed. 
 Finally the contents of the store and registers are sent to the VDU to be printed to the screen.  
-
-#SSEMbler
-
-##Manchester Small-Scale Experimental Machine assembler
-
-###Example usage: 
-./SSEMbler t1.s 
-./SSEMbler <filename>
-
-On successful completion SSEMbler will have created a “binary.ssem” file copy this to the directory of the simulator and run via typing ./SSEM -f binary.ssem 
-
-Program includes 4 example assembly files, these are named t1-t4.s, t1 if the default add two numbers together function 
-t2-t4 are translated from example applications at http://www.davidsharp.com/baby/ 
