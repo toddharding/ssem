@@ -3,8 +3,9 @@
 ##Manchester Small-Scale Experimental Machine emulator
 
 ##Example usage:
-
-./SSEM -f baby.text -s on 
+```bash
+./SSEM -f baby.text -s on
+``` 
  What the command line arguments mean: 
 -f = the filename that contains the program to load -s = step through execution mode, can be either on or off
 
@@ -28,9 +29,11 @@ Finally the contents of the store and registers are sent to the VDU to be printe
 
 ##Manchester Small-Scale Experimental Machine assembler
 
-###Example usage: 
+###Example usage:
+```bash
 ./SSEMbler t1.s 
 ./SSEMbler <filename>
+```
 
 On successful completion SSEMbler will have created a “binary.ssem” file copy this to the directory of the simulator and run via typing ./SSEM -f binary.ssem 
 
